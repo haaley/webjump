@@ -6,6 +6,10 @@ const MoviesService = {
     const {data} = await requestTraktApi(MoviesEndpoint.trending());
     return data;
   },
+  getPopularMovies: async () => {
+    const {data} = await requestTraktApi(MoviesEndpoint.popular());
+    return data;
+  },
 };
 
 export default MoviesService;
