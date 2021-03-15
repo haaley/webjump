@@ -20,8 +20,7 @@ export default function Popular() {
 
   useEffect(() => {
     dispatch(fetchRequestPopular());
-    console.log(moviesState);
-  }, [dispatch, moviesState]);
+  }, [dispatch]);
 
   const renderItem = ({item}) => {
     return <PopularMovieCard item={item} />;
