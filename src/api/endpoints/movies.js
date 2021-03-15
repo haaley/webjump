@@ -7,4 +7,10 @@ export const MoviesEndpoint = {
       path: '/movies/trending',
     };
   },
+  popular() {
+    return {
+      method: methods.get,
+      path: '/movies/popular',
+    };
+  },
 };
